@@ -38,9 +38,9 @@ module.exports = {
     },
     proxy: {
       '/api':{
-        // target: 'http://192.168.1.4:8091/credit-information-service',
+        target: 'http://192.168.1.40:8091/credit-information-service',
         // target: 'http://39.100.88.224:8091/credit-information-service',
-        target: 'http://11.88.16.67:8091/credit-information-service',
+        // target: 'http://11.88.16.67:8091/credit-information-service',
         changeOrigin: true,
         pathRewrite: {
             '^/api': ''
