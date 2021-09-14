@@ -1,0 +1,116 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+.el-form-item__label{
+  line-height: 20px;
+}
+.login-body{
+  .el-form{
+    .el-form-item{
+      .el-form-item__label{
+        line-height: 40px !important;
+      }
+    }
+  }
+
+
+}
+.el-table th { font-weight: bold; color: #333; background-color: #efefef; }
+.el-form--label-top .el-form-item__label{
+  padding: 0;
+}
+.el-drawer__wrapper {
+  .el-drawer__header {
+      margin-bottom: 0;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ddd;
+
+      span, button {
+          outline: none;
+      }
+  }
+
+  .el-drawer__body {
+      position: relative;
+      .el-drawer__content {
+          position: absolute;
+          top: 0;
+          right: 0px;
+          bottom: 50px;
+          left: 0;
+          padding: 15px 20px;
+          overflow: auto;
+      }
+
+      .el-drawer__footer {
+          position: absolute;
+          width: 100%;
+          height: 50px;
+          bottom: 0;
+          padding: 10px 20px;
+          border-top: 1px solid #ddd;
+          background: #fff;
+      }
+  }
+}
+.FuzzyQuery{
+  .el-col-5{
+    width: 20%;
+  }
+}
+
+.el-card.is-always-shadow, .el-card.is-hover-shadow:focus, .el-card.is-hover-shadow:hover{
+  margin-bottom: 20px;
+}
+
+.el-radio-button__inner{
+  width: 100%;
+}
+
